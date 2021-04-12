@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs',title='HomePage' ) %>
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs',title='HomePage' ) %>
+        <section class="header">
+            <figure id="figure-headImage">
+                <img id="headImage" src="pics/img1.jpg" alt="">
+                <figcaption>
+                    <h4>A few words about this blog
+                        <br> platform, Ghost, and how this
+                        <br> site was made
+                    </h4>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="articles">
+            <h1 id="title">All articles</h1>
+            <div id="articles-figure">
+                <% data.forEach((elm)=>{ %>
+                    <figure>
+                        <a href=<%=elm.id%>>
+                            <img src=<%=elm.url %> id="articles-figure-img">
+                        </a>
+                        <figcaption>
+                            <p id="articles-figure-para">
+                                <%=elm.title%>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <% }) %>
+            </div>
+        </section>
+        <%- include('../partials/footer.ejs' ) %>
+</body>
+
+</html>
