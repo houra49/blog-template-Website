@@ -23,7 +23,7 @@
             <div id="articles-figure">
                 <% data.forEach((elm)=>{ %>
                     <figure>
-                        <a href=<%=elm.id%>>
+                        <a href=<%=`/index/${elm.id}`%>>
                             <img src=<%=elm.url %> id="articles-figure-img">
                         </a>
                         <figcaption>

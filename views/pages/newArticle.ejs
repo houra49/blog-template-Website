@@ -10,27 +10,18 @@
         <section class="newarticle">
             <div class="newarticle-h1">
                 <h1>Add New Article</h1>
-                <h1>-</h1>
+                <div class="newarticle-line"></div>
             </div>
-            <form class="newarticle-form" action="/new" methode="POST">
-                <div>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <input type="url" name="" id="">
-                </div>
-                <div>
-                    <input type="text" name="" id="">
-                </div>
-                <div>
-                    <input type="file" name="" id="">
-                </div>
-                <div>
-                    <textarea name="text" id="" cols="30" rows="10"></textarea>
-                </div>
-                <button>SEND ARTICLE</button>
+            <form class="newarticle-form" action="/addNew/new" method="POST">
+                <input type="text" name="title" id="" placeholder="title">
+                <input type="text" name="url_picture" id="" placeholder="Url_picture">
+                <input type="text" name="author" id="" placeholder="author">
+                <input type="text" name="author_picture" id="" placeholder="author_picture ">
+                <textarea name="text_blog" id="" placeholder="write your article ehere"></textarea>
+                <input id="newarticle-form-submit" type="submit" value="SEND ARTICLE">
             </form>
         </section>
+        <%- include('../partials/footer.ejs' ) %>
 </body>
 
 </html>

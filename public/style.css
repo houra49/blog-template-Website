@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 body{
     margin:0;
 }
@@ -5,6 +8,19 @@ body{
     display:flex;
     justify-content: space-around;
     border-bottom: 1px solid dimgray;
+    align-items: center;
+}
+.logo{
+    font-family: 'Dela Gothic One', cursive;
+    display:flex;
+    justify-content:space-evenly;
+    width:40vw;
+}
+.logo-img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    align-self: center;
 }
 .nav-container-list{
     display:flex;
@@ -14,6 +30,8 @@ body{
 }
 .nav-container-list li a{
     text-decoration: none;
+    color:#000;
+    font-family: 'Roboto Mono', monospace;
 }
 #headImage{
     margin:10vh 0 0 17vw;
@@ -21,6 +39,13 @@ body{
 h4{
     text-align:center;
     font-size: 2em;
+    font-family: 'Bebas Neue', cursive;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
 }
 #figure-headImage{
     border-bottom: 1px solid #000;
@@ -51,18 +76,74 @@ h4{
 .footer-link{
     display: flex;
     justify-content: space-around;
+    font-family: 'Bebas Neue', cursive;
 }
 .footer-nordic{
     text-align:center;
 }
 .footer-nordic-ul{
     list-style: none;
+    font-family: 'Bebas Neue', cursive;
 }
 .footer-nordic-para{
     margin-bottom: 0%;
+    font-size: .8em;
+    line-height:20px;
+}
+/*************************************************************************/
+/*******************************articleDetails****************************/
+#details-title{
+    width:38vw;
+    text-align:center;
+    margin:10vh auto;
+}
+#details-img{
+    width:60vw;
+    margin:5vh 15vw;
+}
+#details-imgCount{
+    border-bottom: #000 solid 1px;
+}
+#details-author{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:30vh;
+}
+#details-author-2{
+   align-self: center;
+   padding-left: 2vw;
+}
+#details-body{
+    text-align:justify;
+    width: 40vw;
+    margin: 0 auto;
 }
 /*************************************************************************/
 /*********************************newarticle******************************/
-.newarticle-h1,.newarticle-form{
+.newarticle-h1{
     text-align:center;
+}
+.newarticle-line{
+    width:40px;
+    border:2px solid #000;
+    margin:0 auto;
+}
+input,textarea{
+    width: 50vw;
+    height:5vh;
+    margin-bottom: 2%;
+    background-color: #E5E5E5;
+    border: #E5E5E5 solid 1px;
+}
+textarea {
+    height:15vh;
+}
+.newarticle-form{
+    text-align:center;
+    margin-top: 5%;
+}
+#newarticle-form-submit{
+    background-color: #000;
+    color: #fff;
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs') %>
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+        <h1 id="details-title">
+            <%=art.title%>
+        </h1>
+        <figure id="details-figure">
+            <div id="details-imgCount">
+                <img src=<%=`${art.url}`%> id="details-img">
+            </div>
+            <figcaption>
+                <div id="details-author">
+                    <img src=<%=art.author_bild%> alt="">
+                    <div id="details-author-2">
+                        <%=art.author%>
+                            <p>
+                                <%=art.published_at%>
+                                    - <%=art.duration%> min read
+                            </p>
+                    </div>
+                </div>
+                <p id="details-body">
+                    <%=art.body%>
+                </p>
+
+            </figcaption>
+        </figure>
+        <%- include('../partials/footer.ejs' ) %>
+</body>
+
+</html>
