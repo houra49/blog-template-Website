@@ -15,3 +15,10 @@ app.get('/', (req, res) => {
             data: infos
         })
 })
+app.get('/newArticle', (req, res) => {
+    res.render('pages/newArticle',
+        {
+            title: 'newArticle',
+            data: infos
+        })
+})

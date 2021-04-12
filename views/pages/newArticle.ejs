@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs',title='HomePage' ) %>
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs',title='HomePage' ) %>
+        <section class="newarticle">
+            <div class="newarticle-h1">
+                <h1>Add New Article</h1>
+                <h1>-</h1>
+            </div>
+            <form class="newarticle-form" action="/new" methode="POST">
+                <div>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <input type="url" name="" id="">
+                </div>
+                <div>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <input type="file" name="" id="">
+                </div>
+                <div>
+                    <textarea name="text" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>SEND ARTICLE</button>
+            </form>
+        </section>
+</body>
+
+</html>

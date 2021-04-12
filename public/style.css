@@ -61,3 +61,8 @@ h4{
 .footer-nordic-para{
     margin-bottom: 0%;
 }
+/*************************************************************************/
+/*********************************newarticle******************************/
+.newarticle-h1,.newarticle-form{
+    text-align:center;
+}
