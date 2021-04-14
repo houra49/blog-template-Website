@@ -24,13 +24,14 @@
                 <% data.forEach((elm)=>{ %>
                     <figure>
                         <a href=<%=`/index/${elm.id}`%>>
-                            <img src=<%=elm.url %> id="articles-figure-img">
+                            <img src=<%=`${elm.url }`%> id="articles-figure-img">
                         </a>
                         <figcaption>
                             <p id="articles-figure-para">
-                                <%=elm.title%>
+                                <%=`${elm.title}`%>
                             </p>
                         </figcaption>
+
                     </figure>
                     <% }) %>
             </div>

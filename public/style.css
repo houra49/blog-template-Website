@@ -57,7 +57,13 @@ h1{
     margin-left:80px;
 }
 #articles-figure-img{
-    width:35vw
+    width:50vw;
+    font-family: 'Roboto Mono', monospace;
+    font-size:.8em
+}
+#author_picture{
+    font-family: 'Roboto Mono', monospace;
+    font-size:.8em
 }
 #title{
     text-align:center;
